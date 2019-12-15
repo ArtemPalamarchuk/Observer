@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+        <div class="basket-full" id="basket">
+            <div class="basket-modal">
+                <span class="basket-modal__close">&#10006;</span>
+                <div class="basket-modal__title">Корзина</div>
+                <div class="basket-modal__products" id="prList">
+                    <!--<div class="basket-item">
+                        <img class="basket-item__img" src="img/product.jpg">
+                        <p class="basket-item__price">1</p>
+                        <p class="basket-item__code">1</p>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="products__item item">
+                <img class="item__img" src="img/product.jpg">
+                <p class="item__description">Код товара: 1</p>
+                <p class="item__price">100$</p>
+                <button class="item__to-basket" data-id="1" data-price="100$">Добавить в корзину</button>
+            </div>
+
+            <div class="products__item item">
+                <img class="item__img" src="img/product.jpg">
+                <p class="item__description">Код товара: 2</p>
+                <p class="item__price">200$</p>
+                <button class="item__to-basket" data-id="2" data-price="200$">Добавить в корзину</button>
+            </div>
+
+            <div class="products__item item">
+                <img class="item__img" src="img/product.jpg">
+                <p class="item__description">Код товара: 3</p>
+                <p class="item__price">300$</p>
+                <button class="item__to-basket" data-id="3" data-price="300$">Добавить в корзину</button>
+            </div>
+
+            <div class="products__item item">
+                <img class="item__img" src="img/product.jpg">
+                <p class="item__description">Код товара: 4</p>
+                <p class="item__price">400$</p>
+                <button class="item__to-basket" data-id="4" data-price="400$">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <div class="basket">
+            <div id="productCount">0</div>
+            <img width="150" height="150" src="img/basket.png" id="basketImg">
+        </div>
+
+        <div class="addProduct" id="addProduct"></div>
+
+        <script src="js/model.js"></script>
+        <script src="js/controller.js"></script>
+    </body>
+</html>
